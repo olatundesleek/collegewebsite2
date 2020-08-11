@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florintech Computer College | Homepage</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page-container">
+      <!-- start of header -->
+      <div class="header">
+        <div class="top-header"></div>
+        <div class="logo"></div>
+        <div class="menu"></div>
+      </div>
+      <!-- end of header -->
+
+      <!--start of slider  -->
+      <div class="Homepage-slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="/assets/images/header-image1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/student1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/header-image1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/header-image1.jpg" />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="../package/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".swiper-container", {
+            pagination: {
+              el: ".swiper-pagination",
+              type: "progressbar",
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+        </script>
+      </div>
+      <!-- end of slider -->
+
+      <!-- start of faculty -->
+      <div class="faculty"></div>
+      <!-- end of faculty -->
+      <!-- start of advantages -->
+      <div class="advantages"></div>
+      <!-- end of advantages -->
+    </div>
+  </body>
+</html>
