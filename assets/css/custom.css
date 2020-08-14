@@ -1,0 +1,8 @@
+/* slider custom css */
+
+.swiper-slide {
+  position: relative;
+}
+.slider-content {
+  position: absolute;
+}
