@@ -6,3 +6,7 @@
 .slider-content {
   position: absolute;
 }
+.slider-image {
+  width: 100%;
+  object-fit: cover;
+}

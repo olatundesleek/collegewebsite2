@@ -50,7 +50,7 @@ body {
 .top-header-box-right {
   display: flex;
   flex: 1;
-  justify-content: right;
+  justify-content: flex-end;
   padding: 10px 30px;
 }
 
@@ -95,10 +95,19 @@ body {
 .logo-container img {
   width: 16.756rem;
 }
+.menu-box-ul.show {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+  position: relative;
+}
 .menu-box-ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 
   position: relative;
 }
@@ -143,7 +152,9 @@ body {
 } */
 
 .menu {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .menu-box-ul li a:hover {
   color: #007aff;
@@ -339,8 +350,8 @@ body {
 }
 
 .course-images {
-  width: 350px;
-  height: 300px;
+  width: 230px;
+  height: 230px;
 }
 
 .div-course-list-item {
@@ -493,7 +504,7 @@ article {
 
 .menu-box {
   display: flex;
-  justify-content: center;
+  justify-content: right;
 }
 
 @media screen and (max-width: 796px) {
@@ -539,9 +550,8 @@ article {
 }
 .hamburger.open .hamburger-bar:nth-child(1) {
   transform: rotate(135deg);
-  position: absolute;
+
   transition: 0.5s;
-  top: 0;
 }
 .hamburger.open .hamburger-bar:nth-child(2) {
   transition: 0.5s;
@@ -550,9 +560,8 @@ article {
 }
 .hamburger.open .hamburger-bar:nth-child(3) {
   transform: rotate(45deg);
-  position: absolute;
+
   transition: 0.5s;
-  top: 0;
 }
 .register-action {
   white-space: nowrap;
@@ -612,6 +621,52 @@ article {
   max-width: none;
   opacity: 1;
 }
+.show {
+  display: flex;
+}
+.menu-box-ul > li:nth-child(1) {
+  animation: showmenu 0.5s;
+  -webkit-animation: showmenu 0.5s;
+}
+.menu-box-ul > li:nth-child(3) {
+  animation: showmenu 0.9s;
+  -webkit-animation: showmenu 0.9s;
+}
+.menu-box-ul > li:nth-child(5) {
+  animation: showmenu 1.1s;
+  -webkit-animation: showmenu 1.1s;
+}
+.menu-box-ul > li:nth-child(7) {
+  animation: showmenu 1.3s;
+  -webkit-animation: showmenu 1.3s;
+}
+.menu-box-ul > li:nth-child(9) {
+  animation: showmenu 1.5s;
+  -webkit-animation: showmenu 1.5s;
+}
+.menu-box-ul > li:nth-child(11) {
+  animation: showmenu 1.7s;
+  -webkit-animation: showmenu 1.7s;
+}
+.menu-box-ul > li:nth-child(13) {
+  animation: showmenu 1.9s;
+  -webkit-animation: showmenu 1.9s;
+}
+.menu-box-ul > li:nth-child(15) {
+  animation: showmenu 2.1s;
+  -webkit-animation: showmenu 2.1s;
+}
+
+@keyframes showmenu {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .courses-action:hover {
   border-color: #ddbc65;
   transition: 1s;
@@ -648,6 +703,9 @@ h3 {
 @media screen and (max-width: 600px) {
   .top-header-box {
     flex-direction: column;
+  }
+  .menu {
+    justify-content: flex-end;
   }
   .top-header-box-left {
     justify-content: center;
