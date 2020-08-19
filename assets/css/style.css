@@ -6,13 +6,27 @@
   list-style-type: none;
   text-decoration: none;
   box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth !important;
 }
 body {
+  scroll-behavior: smooth !important;
+}
+.container {
+  color: #fff;
+  font-family: "Alegreya Sans", sans-serif;
 }
 .top-header {
   height: auto;
   background-color: #092038;
   border-bottom: 4px solid #ddbc65;
+}
+
+a {
+  color: #fff;
+}
+.activepage {
+  color: blue;
 }
 .top-header-box {
   display: flex;
@@ -103,6 +117,19 @@ body {
 
   position: relative;
 }
+.courses-title {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Alegreya Sans", sans-serif;
+  padding-top: 30px;
+}
+.courses-title-sub {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Alegreya Sans", sans-serif;
+}
 .menu-box-ul {
   display: flex;
   justify-content: center;
@@ -115,8 +142,9 @@ body {
   padding: 18px;
 }
 .menu-box-ul li a {
-  font-size: 14px;
-  font-family: sans-serif;
+  font-size: 16px;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bolder;
 
   color: rgb(116, 116, 116);
   line-height: 120%;
@@ -194,6 +222,155 @@ body {
   left: -4%;
 } */
 
+/* start of course page css */
+/*Bread crumb css style sheet*/
+
+.page-breadcrumbs {
+  background-color: rgb(156, 200, 228);
+  box-shadow: 2px 0 2px 0 black;
+  padding: 30px;
+  display: flex;
+}
+
+.breacruumb-title-1 {
+  flex: auto;
+  padding-left: 40px;
+  font-size: 22px;
+  font-weight: 100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.breacruumb-title-2 a {
+  padding-right: 5px;
+  font-size: 18px;
+  font-weight: 100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+.breacruumb-title-2 {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*page details css style*/
+
+.page-details {
+  padding: 30px;
+  height: 11.3rem;
+}
+
+.page-deatils-1,
+.page-deatils-2 {
+  font-size: 14px !important;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+.page-deatils-1 {
+  display: flex;
+}
+
+.page-deatils-2 {
+  margin-top: 10px !important;
+  padding-left: 10px !important;
+  /* flex: none !important; */
+  color: green;
+  font-size: 17px !important;
+}
+
+.breacruumb-title-1 .page-deatils-1,
+h4 {
+  color: lightgreen;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.page-details p {
+  font-size: 13px;
+  font-weight: 100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: lightgray;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.page-details button {
+  width: 70vw;
+  cursor: pointer;
+  padding: 15px;
+  background-color: rgba(251, 201, 5, 0.77);
+  border-radius: 5px;
+  margin-top: 20px;
+  color: white;
+  font-size: 15px;
+}
+
+/*project image css style*/
+
+.page-image div img {
+  width: 60vw;
+}
+
+.page-image div {
+  margin-left: 90px;
+}
+
+/*Page tab css style sheet*/
+
+.page-Tab-div {
+  box-sizing: content-box;
+  box-shadow: 1px 0 5px black;
+  /* line-height: 30px; */
+  width: 80vw;
+  /* height: 40vh; */
+  height: min-content;
+  /* min-height: 40px; */
+  margin-top: 120px;
+}
+
+.page-Tab {
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+.page-tabs-li {
+  display: inline-flex;
+}
+
+.page-tab-11,
+.page-tab-12 {
+  padding: 30px;
+  background-color: #f6f7f8;
+  width: 15vw;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.page-tab-content {
+  min-height: max-content;
+  border-top: 3.6px solid lightgray;
+  background-color: #f6f7f8;
+  min-height: max-content;
+}
+.course-page-wrapper {
+  background-image: radial-gradient(circle, #083b6b, #092038);
+}
+.page-tab-content p {
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
+
+/* end of course page css */
+
 @keyframes slideup {
   0% {
     transform: translateY(15%);
@@ -234,16 +411,16 @@ body {
 }
 .faculty-images {
   width: 100%;
-  max-height: 200px;
+
   overflow: hidden;
 }
 .faculty-images img {
   width: 100%;
   max-width: 350px;
   height: auto;
-  max-height: 199px;
+
   height: 100%;
-  max-height: 199px;
+
   object-fit: cover;
 }
 .faculty .faculty-items .faculty-note {
@@ -287,7 +464,7 @@ body {
   background-color: #333;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .Homepage-teachers .Homepage-teachers-items {
   display: flex;
@@ -351,7 +528,7 @@ body {
 
 .course-images {
   width: 230px;
-  height: 230px;
+  height: 200px;
 }
 
 .div-course-list-item {
@@ -398,8 +575,9 @@ body {
   font-weight: bolder;
 }
 
-.course-container {
+#course-container {
   background-image: radial-gradient(circle, #083b6b, #092038);
+  padding: 30px 10px;
 }
 
 * {
@@ -449,7 +627,7 @@ body {
 .advantage-h1 {
   color: #fff;
   font-family: "Alegreya Sans", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
 }
 .advantages {
   background-image: radial-gradient(circle, #083b6b, #092038);
@@ -468,14 +646,16 @@ article {
 }
 .advantages-container {
   display: flex;
-  margin: 50px;
+  padding: 30px;
 }
 .trending-programs {
   font-family: "Alegreya Sans", sans-serif;
   color: #fff;
   padding: 20px;
   padding-left: 0;
-  font-size: 20px;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 0;
 }
 .faculty-container {
   background-color: #333;
@@ -486,10 +666,10 @@ article {
   padding-top: 20px;
 }
 .advantages-image {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 .advantages-contents {
-  margin: 0 5px 0 10px;
+  padding: 0 5px 0 10px;
   color: #fff;
   font-family: "Alegreya Sans", sans-serif;
 }
@@ -499,7 +679,7 @@ article {
 }
 .icons {
   color: #fff;
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .menu-box {
@@ -514,10 +694,10 @@ article {
     padding-top: 20px;
   }
   .advantages-image {
-    margin-top: 20px;
+    padding-top: 20px;
   }
   .advantages-contents {
-    margin: 0 5px 0 33px;
+    padding: 0 5px 0 33px;
   }
   .advantages-image img {
     width: 90px;
@@ -728,94 +908,283 @@ h3 {
   .menu-box {
     justify-content: right;
   }
+  .course-images {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
 }
+
+/* testimonial */
+#testimonial {
+  background-color: #092038;
+  padding: 20px 0;
+}
+#testimonial h2 {
+  text-align: center;
+}
+
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 20px;
+}
+#quote-carousel .carousel-control {
+  background: none;
+  color: #fff;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+  position: relative;
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-top: 20px;
+  margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  opacity: 0.4;
+  overflow: hidden;
+  transition: all 0.4s ease-in;
+  vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+  width: 128px;
+  height: 128px;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.item blockquote {
+  border-left: none;
+  margin: 0;
+}
+.item blockquote p:before {
+  content: "\f10d";
+  font-family: "Fontawesome";
+  float: left;
+  margin-right: 10px;
+}
+
+/* end of testimonial */
 
 /* footer */
 
 .footer-container {
-  color: white;
-  margin: 10px 0;
-  background-color: #092038;
-  min-height: 20rem;
-  border: 5px inset #e3cf8a;
+  color: #fff;
+  border-top: 1px solid #ddbc65;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #092038;
+  padding: 20px;
 }
 .footer-content {
-  color: white;
   display: flex;
-  padding-top: 3rem;
-  justify-content: center;
-  /* justify-content: space-around; */
+  width: 100%;
+}
+.footer-reference {
+  width: 20%;
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 0 10px;
 }
 .footer-reference ul li a {
-  color: white;
+  color: #fff;
+}
+.footer-reference ul li i {
+  padding: 7px;
 }
 .footer-reference ul li a:hover {
   color: blue;
 }
 
-.footer-reference ul li :hover {
-  color: blue;
-}
 .footer-recent {
-  display: flex;
-  margin: 20px 0;
+  border-radius: 7px;
 }
 .footer-logo {
-  margin-right: 40px;
+  width: 50%;
+  padding: 0 10px;
 }
 
 .footer-post {
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
+  width: 30%;
+  padding: 0 10px;
 }
-.post-text {
-  margin: 10px;
+small {
+  color: #fff !important;
 }
 .image {
   width: 100px;
   height: 70px;
 }
 .footer-line {
-  width: 63rem;
-  height: 1px;
-  background-color: white;
-  margin-left: 8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
-#enroll {
-  color: #e3cf8a;
+.footer-line .line {
+  height: 1px;
+  background-color: #fff;
+  width: 100%;
 }
 .footer-copyright {
-  text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .social {
-  margin-right: 10rem;
-  font-size: 20px;
-  padding: 10px;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.footer-logo p {
+  font-family: "Alegreya Sans", sans-serif;
+  padding: 0 12px;
 }
 .copyright {
-  margin: 30px 8rem;
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  padding-top: 10px;
+  font-size: 16px;
+}
+.social i {
+  padding: 0 20px;
 }
 
-@media screen and (max-width: 360px) {
-  .footer-content {
-    color: white;
-    display: block;
-    padding-top: 3rem;
-    justify-content: center;
-  }
-
-  .footer-post {
-    /* text-align: right; */
-    margin: 10px 0;
-  }
-
-  .footer-line {
-    width: 10rem;
-    margin-left: 30px;
+@media screen and (max-width: 796px) {
+  .faculty-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
     text-align: center;
   }
+  .social-text {
+    display: none;
+  }
+  .faculty {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .faculty-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 5px;
+  }
+  .faculty-images {
+    width: 100%;
+    max-height: 100vh;
+  }
+  .faculty-images img {
+    width: 100%;
+    height: 350px;
+    border: 1px;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    margin-bottom: 3px;
+  }
+  .faculty .faculty-items .faculty-note .faculty-text-link {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    margin-left: 15px;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .footer-container .footer-content .footer-logo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .footer-container .footer-content .footer-reference {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .footer-container .footer-content .footer-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .footer-container .footer-content .footer-logo img {
+    width: 100%;
+    max-width: 250px;
+  }
+  .footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+  }
+  .social {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .social i {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .faculty-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 5px;
+    height: auto;
+  }
+
+  .faculty {
+    flex-direction: column;
+  }
+  .Homepage-teachers-items {
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 5px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 360px) {
 }
 
 /* end of footer */
