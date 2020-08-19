@@ -109,7 +109,7 @@ a {
 .logo-container img {
   width: 16.756rem;
 }
-.menu-box-ul.show {
+.menu-box-ul.showmenulist {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -801,8 +801,8 @@ article {
   max-width: none;
   opacity: 1;
 }
-.show {
-  display: flex;
+.showmenulist {
+  display: block;
 }
 .menu-box-ul > li:nth-child(1) {
   animation: showmenu 0.5s;
