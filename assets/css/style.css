@@ -189,8 +189,8 @@ a {
   transition: 1s;
 }
 .menu-box-ul li:hover ul {
-  animation: slideup 0.4s;
-  display: block;
+  /* animation: slideup 0.4s;
+  display: block; */
 }
 .top-header-box-left-span1 {
   margin-left: 17px;
@@ -351,6 +351,36 @@ h4 {
   width: 15vw;
   text-align: center;
   margin-right: 5px;
+  cursor: pointer;
+}
+.active-tab {
+  background-color: blue;
+  color: white;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.overview-heading,
+.curriculum-heading {
+  color: #000;
+  text-align: center;
+}
+.curriculum {
+  display: none;
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+}
+.overview {
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
 }
 
 .page-tab-content {
