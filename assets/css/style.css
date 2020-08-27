@@ -189,8 +189,8 @@ a {
   transition: 1s;
 }
 .menu-box-ul li:hover ul {
-  /* animation: slideup 0.4s;
-  display: block; */
+  animation: slideup 0.4s;
+  display: block;
 }
 .top-header-box-left-span1 {
   margin-left: 17px;
@@ -916,6 +916,9 @@ h3 {
   }
   .menu {
     justify-content: flex-end;
+  }
+  .menu-box-ul-courses {
+    display: none;
   }
   .top-header-box-left {
     justify-content: center;
