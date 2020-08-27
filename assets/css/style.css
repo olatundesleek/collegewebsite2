@@ -188,9 +188,9 @@ a {
   color: #007aff;
   transition: 1s;
 }
-.menu-box-ul li:hover ul {
+.menu-box-ul li:hover .menu-box-ul-courses {
   animation: slideup 0.4s;
-  display: block;
+  display: flex;
 }
 .top-header-box-left-span1 {
   margin-left: 17px;
