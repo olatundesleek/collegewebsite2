@@ -913,11 +913,18 @@ h3 {
 .slider-actions {
   margin-top: 20px;
 }
+.testimonial-img {
+  width: 100%;
+  height: 100%;
+}
 
 /* media queries */
 
 @media screen and (max-width: 600px) {
   .top-header-box {
+    flex-direction: column;
+  }
+  .mapandevent {
     flex-direction: column;
   }
   .menu {
@@ -1227,3 +1234,38 @@ small {
 }
 
 /* end of footer */
+.event {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+.mapandevent {
+  display: flex;
+  background-color: #333333;
+}
+.address {
+  color: #000;
+}
+.opendaysandtime {
+}
+.event-container {
+  margin-top: 50px;
+  display: flex;
+  padding: 60px;
+}
+.currentday {
+  font-weight: bolder;
+  background: aliceblue;
+  color: black;
+}
+.days,
+.time {
+  font-size: 18px;
+}
+.map,
+.event {
+  flex: 1;
+}
+.location-title {
+  text-align: center;
+}

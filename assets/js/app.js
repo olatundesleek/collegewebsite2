@@ -6,21 +6,30 @@ hamburger.addEventListener("click", () => {
   mobileMenu.classList.toggle("showmenulist");
 });
 
-let overviewTab = document.querySelector(".page-tab-11");
-let curriculumTab = document.querySelector(".page-tab-12");
-let overviewContent = document.querySelector(".overview");
-let curriculumContent = document.querySelector(".curriculum");
+let days = document.getElementsByClassName("days");
+let time = document.getElementsByClassName("time");
+let date = new Date();
+let currentDay = date.getDay();
 
-curriculumTab.addEventListener("click", () => {
-  curriculumTab.classList.add("active-tab");
-  overviewTab.classList.remove("active-tab");
-  overviewContent.style.display = "none";
-  curriculumContent.style.display = "block";
-});
-
-overviewTab.addEventListener("click", () => {
-  curriculumTab.classList.remove("active-tab");
-  overviewTab.classList.add("active-tab");
-  overviewContent.style.display = "block";
-  curriculumContent.style.display = "none";
-});
+switch (currentDay) {
+  case 1:
+    days[0].classList.add("currentday");
+    time[0].classList.add("currentday");
+    break;
+  case 2:
+    days[1].classList.add("currentday");
+    time[1].classList.add("currentday");
+    break;
+  case 3:
+    days[2].classList.add("currentday");
+    time[2].classList.add("currentday");
+    break;
+  case 4:
+    days[3].classList.add("currentday");
+    time[3].classList.add("currentday");
+    break;
+  case 5:
+    days[4].classList.add("currentday");
+    time[4].classList.add("currentday");
+    break;
+}
