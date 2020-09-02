@@ -209,7 +209,7 @@ a {
 }
 
 .menu-box-ul-courses {
-  display: flex;
+  display: none;
 }
 /* .menu-box-ul-courses.open-menu {
   animation: slideup 0.4s;
@@ -285,7 +285,7 @@ a {
   margin-top: 10px !important;
   padding-left: 10px !important;
   /* flex: none !important; */
-  color: green;
+  color: white;
   font-size: 17px !important;
 }
 
@@ -306,7 +306,8 @@ h4 {
   padding-top: 10px;
 }
 
-.page-details button {
+.enrol {
+  display: inline-block;
   width: 70vw;
   cursor: pointer;
   padding: 15px;
@@ -315,6 +316,7 @@ h4 {
   margin-top: 20px;
   color: white;
   font-size: 15px;
+  text-align: center;
 }
 
 /*project image css style*/
@@ -1242,6 +1244,7 @@ small {
 .mapandevent {
   display: flex;
   background-color: #333333;
+  font-family: "Alegreya Sans", sans-serif;
 }
 .address {
   color: #000;
@@ -1261,6 +1264,7 @@ small {
 .days,
 .time {
   font-size: 18px;
+  padding: 10px 10px 10px 10px;
 }
 .map,
 .event {
