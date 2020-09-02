@@ -1,0 +1,7 @@
+[16-May-2019 09:38:38 America/New_York] PHP Parse error:  syntax error, unexpected '=' in /home/florlwya/public_html/apply/index.php on line 132
+[16-May-2019 09:38:43 America/New_York] PHP Parse error:  syntax error, unexpected '=' in /home/florlwya/public_html/apply/index.php on line 132
+[16-May-2019 09:38:46 America/New_York] PHP Parse error:  syntax error, unexpected '=' in /home/florlwya/public_html/apply/index.php on line 132
+[16-May-2019 09:39:00 America/New_York] PHP Parse error:  syntax error, unexpected '=' in /home/florlwya/public_html/apply/index.php on line 132
+[07-Jul-2019 04:24:25 America/New_York] PHP Notice:  Undefined index: session in /home/florlwya/public_html/apply/index.php on line 126
+[11-Feb-2020 05:46:19 America/New_York] PHP Notice:  Undefined index: session in /home/florlwya/public_html/apply/index.php on line 126
+[21-Jun-2020 07:40:46 America/New_York] PHP Notice:  Undefined index: session in /home/florlwya/public_html/apply/index.php on line 126
