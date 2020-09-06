@@ -23,3 +23,13 @@
 .circle-type li {
     padding-inline-start: 50px;
 }
+
+.circle-type-1 {
+    position: relative;
+    padding-left: 70px;
+}
+
+.circle-type-1 li {
+    list-style-type: disc !important;
+    color: black;
+}
