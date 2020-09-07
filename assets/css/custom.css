@@ -1,12 +1,25 @@
 /* slider custom css */
 
 .swiper-slide {
-  position: relative;
+    position: relative;
 }
+
 .slider-content {
-  position: absolute;
+    position: absolute;
 }
+
 .slider-image {
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*curicilim ul style*/
+
+.circle-type {
+    list-style-type: disc !important;
+}
+
+.circle-type li {
+    padding-inline-start: 50px;
 }
