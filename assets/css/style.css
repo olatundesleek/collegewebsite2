@@ -1255,7 +1255,7 @@ small {
 .event-container {
   margin-top: 50px;
   display: flex;
-  padding: 60px;
+  padding: 30px;
 }
 .currentday {
   font-weight: bolder;
@@ -1265,9 +1265,11 @@ small {
 .days,
 .time {
   font-size: 18px;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 5px 10px 5px;
 }
-.map,
+.map {
+  flex: 2;
+}
 .event {
   flex: 1;
 }
@@ -1411,5 +1413,128 @@ small {
 @media screen and (max-width: 360px) {
   .about-us-note {
     font-size: 1.12rem;
+  }
+}
+
+/* Tutorial  */
+.tutorial-page {
+  width: 100%;
+  background-color: #092038;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Alegreya Sans", sans-serif;
+}
+.tutorial-page-banner {
+  width: 100%;
+}
+.tutorial-page-banner .tutorial-page-banner-content {
+  width: 100%;
+}
+.tutorial-banner-img {
+  width: 100%;
+}
+.tutorial-page .tutorial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  width: 100%;
+  padding: 5px;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.tutorial-page .tutorial-page-heading {
+  font-size: 2.1rem;
+  text-align: center;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 700;
+  padding: 20px;
+  display: inline;
+  color: #ddbc65;
+}
+.tutorial-page .tutorial-container .tutorial-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 3px;
+}
+.tutorial-page
+  .tutorial-container
+  .tutorial-content:hover
+  .tutorial-content-video
+  video {
+  transform: scale(0.97);
+  transition: all 0.5s ease;
+}
+.tutorial-page .tutorial-container .tutorial-content .tutorial-content-video {
+  width: 100%;
+  text-align: center;
+}
+.tutorial-page
+  .tutorial-container
+  .tutorial-content
+  .tutorial-content-video
+  video {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  display: block;
+  cursor: pointer;
+}
+.tutorial-page
+  .tutorial-container
+  .tutorial-content
+  .tutorial-content-note
+  .tutorial-video-title {
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  font-family: "Rubik", sans-serif;
+}
+.tutorial-page
+  .tutorial-container
+  .tutorial-content
+  .tutorial-content-note
+  .tutorial-tutor {
+  color: #ddbc65;
+}
+
+.tutorial-page
+  .tutorial-container
+  .tutorial-content
+  .tutorial-content-note
+  .tutorial-course-link {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 0.4rem 0;
+}
+
+.other-branches {
+  flex: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .tutorial-page .tutorial-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media screen and (max-width: 796px) {
+  .tutorial-page .tutorial-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+@media screen and (max-width: 680px) {
+  .tutorial-page .tutorial-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px));
+  }
+}
+@media screen and (max-width: 360px) {
+  .tutorial-page .tutorial-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px));
   }
 }
