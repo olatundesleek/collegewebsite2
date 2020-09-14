@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +8,16 @@
   text-decoration: none;
   scroll-behavior: smooth !important;
 }
+
 body {
   scroll-behavior: smooth !important;
 }
+
 .container {
   color: #fff;
   font-family: "Alegreya Sans", sans-serif;
 }
+
 .top-header {
   height: auto;
   background-color: #092038;
@@ -25,42 +27,53 @@ body {
 a {
   color: #fff;
 }
+
 .activepage {
   color: blue;
 }
+
 .top-header-box {
   display: flex;
 }
+
 .top-header-box-left {
   flex: 1;
   display: flex;
   justify-content: left;
   padding: 10px 30px;
 }
+
 .book {
   padding-right: 4px;
   color: white;
 }
+
 .phone {
   transform: scaleX(-1);
   padding-left: 5px;
 }
+
 .top-header-box-left p {
   color: white;
 }
+
 .top-header-box-left a {
   display: flex;
 }
+
 .top-header-box-left i {
   color: #fff;
   font-size: 20px;
 }
+
 .top-header-box-left i :hover {
   color: #092038;
 }
+
 .top-header-box-left-span:hover {
   opacity: 0.9;
 }
+
 .top-header-box-right {
   display: flex;
   flex: 1;
@@ -73,48 +86,58 @@ a {
   font-size: 17px;
   padding-right: 6.5px;
 }
+
 .top-header-box-right a {
   color: #fff;
   font-size: 17px;
   padding-left: 3px;
   display: flex;
 }
+
 .top-header-box-right-sign-in {
   margin-left: 20px;
 }
+
 .top-header-box-right-sign-in:hover {
   opacity: 0.8;
 }
+
 .top-header-box-right-a1:hover {
   opacity: 0.8;
 }
+
 .top-header-box-right-al-span {
   display: flex;
 }
+
 .top-header-box-right p {
   color: #fff;
 }
+
 .top-header-box-right-p1 {
   color: green;
 }
+
 .top-header-box-right-login {
   padding-left: 3px;
 }
+
 .logo-container {
   display: grid;
   height: 7rem;
   place-items: center;
   border-bottom: 1.7px solid #2f2ea3;
 }
+
 .logo-container img {
   width: 16.756rem;
 }
+
 .menu-box-ul.showmenulist {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-
   position: relative;
 }
 
@@ -125,38 +148,42 @@ a {
   font-family: "Alegreya Sans", sans-serif;
   padding-top: 30px;
 }
+
 .courses-title-sub {
   text-align: center;
   color: #fff;
   font-size: 20px;
   font-family: "Alegreya Sans", sans-serif;
 }
+
 .menu-box-ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-
   position: relative;
 }
+
 .menu-box-ul li {
   padding: 18px;
 }
+
 .menu-box-ul li a {
   font-size: 16px;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: bolder;
-
   color: rgb(116, 116, 116);
   line-height: 120%;
   word-spacing: normal;
   letter-spacing: normal;
 }
+
 .menu-box-ul i {
   font-size: 8px;
   padding: 23.6px 0 0 0;
   opacity: 0.5;
 }
+
 .menu-box-ul li ul li {
   padding: 10px;
   top: 60px;
@@ -176,6 +203,7 @@ a {
   border-bottom-left-radius: 10px;
   box-shadow: -2px 4px 9px rgb(172, 172, 172);
 }
+
 /* .menu-box-ul li ul li {
   background-color: #333;
 } */
@@ -185,10 +213,12 @@ a {
   justify-content: center;
   width: 100%;
 }
+
 .menu-box-ul li a:hover {
   color: #007aff;
   transition: 1s;
 }
+
 /* .menu-box-ul li:hover .menu-box-ul-courses {
   animation: slideup 0.4s;
   display: flex;
@@ -202,9 +232,11 @@ a {
 .top-header-box-left-span1 {
   margin-left: 17px;
 }
+
 .top-header-box-left-span1:hover {
   opacity: 0.9;
 }
+
 .menu-box-ul-courses li a {
   color: #dfdfdf;
 }
@@ -212,9 +244,11 @@ a {
 .menu-box-ul-courses {
   display: none;
 }
+
 /* .menu-box-ul-courses.open-menu {
   animation: slideup 0.4s;
 } */
+
 /* .menu-box-ul-courses.close-menu {
   animation: slidedown 0.4s forwards;
 } */
@@ -222,6 +256,7 @@ a {
 .menu-box-ul-courses-inner2 {
   margin-left: 50px;
 }
+
 /* .HOME-ul {
   left: -2%;
 }
@@ -230,6 +265,7 @@ a {
 } */
 
 /* start of course page css */
+
 /*Bread crumb css style sheet*/
 
 .page-breadcrumbs {
@@ -320,6 +356,21 @@ h4 {
   text-align: center;
 }
 
+@media screen and (max-width: 950px) {
+  .breacruumb-title-1 {
+    padding-left: 5px;
+    font-size: 17px;
+  }
+  .breacruumb-title-2 {
+    font-size: 13px;
+    padding-inline-start: 50px;
+  }
+  .page-tab-11,
+  .page-tab-12 {
+    width: 39vw !important;
+  }
+}
+
 /*project image css style*/
 
 .page-image div img {
@@ -357,11 +408,12 @@ h4 {
 .page-tab-12 {
   padding: 30px;
   background-color: #f6f7f8;
-  width: 15vw;
+  width: 19vw;
   text-align: center;
   margin-right: 5px;
   cursor: pointer;
 }
+
 .active-tab {
   background-color: blue;
   color: white;
@@ -371,11 +423,13 @@ h4 {
   -ms-transition: 1s;
   -o-transition: 1s;
 }
+
 .overview-heading,
 .curriculum-heading {
   color: #000;
   text-align: center;
 }
+
 .curriculum {
   display: none;
   transition: 2s;
@@ -384,6 +438,7 @@ h4 {
   -ms-transition: 2s;
   -o-transition: 2s;
 }
+
 .overview {
   transition: 2s;
   -webkit-transition: 2s;
@@ -398,9 +453,11 @@ h4 {
   background-color: #f6f7f8;
   min-height: max-content;
 }
+
 .course-page-wrapper {
   background-image: radial-gradient(circle, #083b6b, #092038);
 }
+
 .page-tab-content p {
   padding-top: 35px;
   padding-left: 50px;
@@ -414,7 +471,6 @@ h4 {
   0% {
     transform: translateY(15%);
   }
-
   100% {
     transform: translateY(0%);
   }
@@ -433,35 +489,38 @@ h4 {
   width: 600px;
   height: 300px;
 }
+
 .faculty {
   display: flex;
   /* grid-template-columns: 1fr 1fr 1fr; */
   flex: 1;
 }
+
 .faculty .faculty-items {
   display: flex;
   width: 100%;
   height: auto;
   background-color: #333;
 }
+
 .faculty .faculty-items:hover img {
   transform: scale(1.05);
   transition: all 0.5s ease;
 }
+
 .faculty-images {
   width: 100%;
-
   overflow: hidden;
 }
+
 .faculty-images img {
   width: 100%;
   max-width: 350px;
   height: auto;
-
   height: 100%;
-
   object-fit: cover;
 }
+
 .faculty .faculty-items .faculty-note {
   margin-left: 15px;
   margin-right: 5px;
@@ -470,11 +529,13 @@ h4 {
   width: 100%;
   max-width: 350px;
 }
+
 .faculty .faculty-items .faculty-note .faculty-date {
   font-size: 12px;
   color: #fff;
   margin: 9px 0;
 }
+
 .faculty .faculty-items .faculty-note .faculty-note-head {
   font-size: 18px;
   color: #fff;
@@ -483,12 +544,14 @@ h4 {
   font-weight: bold;
   margin-top: 10px;
 }
+
 .faculty .faculty-items .faculty-note .faculty-note-text {
   font-size: 16px;
   color: #fff;
   margin: 10px 0;
   font-family: "Alegreya Sans", sans-serif;
 }
+
 .faculty .faculty-items .faculty-note .faculty-text-link {
   font-size: 14px;
   color: #fff;
@@ -498,16 +561,20 @@ h4 {
   border-radius: 5px;
   margin-left: 15px;
 }
+
 /* Homepage Teachers */
+
 .Homepage-teachers {
   background-color: #333;
   display: flex;
   justify-content: space-evenly;
   padding-top: 50px;
 }
+
 .Homepage-teachers .Homepage-teachers-items {
   display: flex;
 }
+
 .Homepage-teachers .Homepage-teachers-items .Homepage-teachers-rows {
   display: flex;
   flex-direction: column;
@@ -517,6 +584,7 @@ h4 {
   width: 100%;
   margin: 0 7px 0 0;
 }
+
 .Homepage-teachers .Homepage-teachers-items .Homepage-teachers-rows img {
   width: 100%;
   max-width: 400px;
@@ -525,6 +593,7 @@ h4 {
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
 }
+
 .Homepage-teachers
   .Homepage-teachers-items
   .Homepage-teachers-rows
@@ -533,6 +602,7 @@ h4 {
   padding: 0.75rem;
   color: #fff;
 }
+
 .Homepage-teachers
   .Homepage-teachers-items
   .Homepage-teachers-rows
@@ -540,6 +610,7 @@ h4 {
   .fa {
   padding: 0.18rem;
 }
+
 .Homepage-teachers
   .Homepage-teachers-items
   .Homepage-teachers-rows
@@ -632,16 +703,15 @@ h4 {
 
 .div-course-img .custom-badge {
   position: absolute;
-
   width: 70px;
   text-align: center;
   height: 80px;
   padding-top: 10px;
   color: white;
   font-size: 25px;
-
   right: 3px;
 }
+
 .div-course-list-item-details p {
   font-size: 18px;
   color: #fff;
@@ -652,6 +722,7 @@ h4 {
 }
 
 /* advantage */
+
 .advantage-line2 {
   width: 250px;
   height: 1px;
@@ -659,15 +730,18 @@ h4 {
   border-radius: 5px;
   margin: 20px 0px;
 }
+
 .advantage-line {
   display: flex;
   justify-content: center;
 }
+
 .advantage-h1 {
   color: #fff;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 25px;
 }
+
 .advantages {
   background-image: radial-gradient(circle, #083b6b, #092038);
   padding-top: 30px;
@@ -676,17 +750,21 @@ h4 {
 .advantage-F-header {
   text-align: center;
 }
+
 .cap {
   color: #fff;
   font-size: 30px;
 }
+
 article {
   display: flex;
 }
+
 .advantages-container {
   display: flex;
   padding: 30px;
 }
+
 .trending-programs {
   font-family: "Alegreya Sans", sans-serif;
   color: #fff;
@@ -696,26 +774,32 @@ article {
   text-align: center;
   margin-top: 0;
 }
+
 .faculty-container {
   background-color: #333;
 }
+
 .Advantages-S-header {
   display: flex;
   justify-content: center;
   padding-top: 20px;
 }
+
 .advantages-image {
   padding-top: 20px;
 }
+
 .advantages-contents {
   padding: 0 5px 0 10px;
   color: #fff;
   font-family: "Alegreya Sans", sans-serif;
 }
+
 .advantage-p {
   font-family: "Alegreya Sans", sans-serif;
   color: #fff;
 }
+
 .icons {
   color: #fff;
   font-size: 35px;
@@ -742,7 +826,6 @@ article {
     width: 90px;
     transition: all ease 0.1s;
   }
-
   .advantages-image img:hover {
     width: 100px;
     transition: all ease 0.7s;
@@ -750,7 +833,9 @@ article {
   .advantages-container {
   }
 }
+
 /* hamburger */
+
 .hamburger {
   cursor: pointer;
   position: relative;
@@ -767,21 +852,23 @@ article {
   transform: rotateY(360deg);
   transition: 0.5s;
 }
+
 .hamburger.open .hamburger-bar:nth-child(1) {
   transform: rotate(135deg);
-
   transition: 0.5s;
 }
+
 .hamburger.open .hamburger-bar:nth-child(2) {
   transition: 0.5s;
   opacity: 0;
   z-index: 10;
 }
+
 .hamburger.open .hamburger-bar:nth-child(3) {
   transform: rotate(45deg);
-
   transition: 0.5s;
 }
+
 .register-action {
   white-space: nowrap;
   background-color: #092038;
@@ -809,9 +896,9 @@ article {
   max-height: none;
   max-width: none;
   opacity: 1;
-
   transition: 3s;
 }
+
 .courses-action {
   transition: 1s;
   white-space: nowrap;
@@ -840,37 +927,46 @@ article {
   max-width: none;
   opacity: 1;
 }
+
 .showmenulist {
   display: block;
 }
+
 .menu-box-ul > li:nth-child(1) {
   animation: showmenu 0.5s;
   -webkit-animation: showmenu 0.5s;
 }
+
 .menu-box-ul > li:nth-child(3) {
   animation: showmenu 0.9s;
   -webkit-animation: showmenu 0.9s;
 }
+
 .menu-box-ul > li:nth-child(5) {
   animation: showmenu 1.1s;
   -webkit-animation: showmenu 1.1s;
 }
+
 .menu-box-ul > li:nth-child(7) {
   animation: showmenu 1.3s;
   -webkit-animation: showmenu 1.3s;
 }
+
 .menu-box-ul > li:nth-child(9) {
   animation: showmenu 1.5s;
   -webkit-animation: showmenu 1.5s;
 }
+
 .menu-box-ul > li:nth-child(11) {
   animation: showmenu 1.7s;
   -webkit-animation: showmenu 1.7s;
 }
+
 .menu-box-ul > li:nth-child(13) {
   animation: showmenu 1.9s;
   -webkit-animation: showmenu 1.9s;
 }
+
 .menu-box-ul > li:nth-child(15) {
   animation: showmenu 2.1s;
   -webkit-animation: showmenu 2.1s;
@@ -880,7 +976,6 @@ article {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -890,32 +985,39 @@ article {
   border-color: #ddbc65;
   transition: 1s;
 }
+
 .register-action:hover {
   border-color: #ddbc65;
   transition: 1s;
 }
+
 .faculty .faculty-items .faculty-note .faculty-text-link:hover {
   border-color: #ddbc65;
 }
+
 .slider-content h1,
 h3 {
   color: #fff;
   font-family: "Alegreya Sans", sans-serif;
-
   font-weight: bolder;
 }
+
 .slider-content h1 {
   font-size: 6vw;
 }
+
 .whatsapp {
   background-color: #91d573;
 }
+
 .slider-content h3 {
   font-size: 4vw;
 }
+
 .slider-actions {
   margin-top: 20px;
 }
+
 .testimonial-img {
   width: 100%;
   height: 100%;
@@ -965,10 +1067,12 @@ h3 {
 }
 
 /* testimonial */
+
 #testimonial {
   background-color: #092038;
   padding: 20px 0;
 }
+
 #testimonial h2 {
   text-align: center;
 }
@@ -977,6 +1081,7 @@ h3 {
   padding: 0 10px 30px 10px;
   margin-top: 20px;
 }
+
 #quote-carousel .carousel-control {
   background: none;
   color: #fff;
@@ -984,6 +1089,7 @@ h3 {
   text-shadow: none;
   margin-top: 30px;
 }
+
 #quote-carousel .carousel-indicators {
   position: relative;
   right: 50%;
@@ -992,6 +1098,7 @@ h3 {
   margin-top: 20px;
   margin-right: -19px;
 }
+
 #quote-carousel .carousel-indicators li {
   width: 50px;
   height: 50px;
@@ -1004,16 +1111,19 @@ h3 {
   transition: all 0.4s ease-in;
   vertical-align: middle;
 }
+
 #quote-carousel .carousel-indicators .active {
   width: 128px;
   height: 128px;
   opacity: 1;
   transition: all 0.2s;
 }
+
 .item blockquote {
   border-left: none;
   margin: 0;
 }
+
 .item blockquote p:before {
   content: "\f10d";
   font-family: "Fontawesome";
@@ -1034,21 +1144,26 @@ h3 {
   background: #092038;
   padding: 20px;
 }
+
 .footer-content {
   display: flex;
   width: 100%;
 }
+
 .footer-reference {
   width: 20%;
   font-family: "Alegreya Sans", sans-serif;
   padding: 0 10px;
 }
+
 .footer-reference ul li a {
   color: #fff;
 }
+
 .footer-reference ul li i {
   padding: 7px;
 }
+
 .footer-reference ul li a:hover {
   color: blue;
 }
@@ -1056,6 +1171,7 @@ h3 {
 .footer-recent {
   border-radius: 7px;
 }
+
 .footer-logo {
   width: 50%;
   padding: 0 10px;
@@ -1066,24 +1182,29 @@ h3 {
   width: 30%;
   padding: 0 10px;
 }
+
 small {
   color: #fff !important;
 }
+
 .image {
   width: 100px;
   height: 70px;
 }
+
 .footer-line {
   display: flex;
   flex-direction: column;
   width: 100%;
   align-items: center;
 }
+
 .footer-line .line {
   height: 1px;
   background-color: #fff;
   width: 100%;
 }
+
 .footer-copyright {
   display: flex;
   justify-content: center;
@@ -1093,16 +1214,19 @@ small {
 .social {
   font-family: "Alegreya Sans", sans-serif;
 }
+
 .footer-logo p {
   font-family: "Alegreya Sans", sans-serif;
   padding: 0 12px;
 }
+
 .copyright {
   text-align: center;
   font-family: "Alegreya Sans", sans-serif;
   padding-top: 10px;
   font-size: 16px;
 }
+
 .social i {
   padding: 0 20px;
 }
@@ -1211,6 +1335,7 @@ small {
     padding: 10px;
   }
 }
+
 @media screen and (max-width: 680px) {
   .faculty-items {
     display: flex;
@@ -1221,7 +1346,6 @@ small {
     margin: 0 5px;
     height: auto;
   }
-
   .faculty {
     flex-direction: column;
   }
@@ -1233,35 +1357,43 @@ small {
     height: auto;
   }
 }
+
 @media screen and (max-width: 360px) {
 }
 
 /* end of footer */
+
 .event {
   display: flex;
   justify-content: center;
   color: #fff;
 }
+
 .mapandevent {
   display: flex;
   background-color: #333333;
   font-family: "Alegreya Sans", sans-serif;
 }
+
 .address {
   color: #000;
 }
+
 .opendaysandtime {
 }
+
 .event-container {
   margin-top: 50px;
   display: flex;
   padding: 30px;
 }
+
 .currentday {
   font-weight: bolder;
   background: aliceblue;
   color: black;
 }
+
 .days,
 .time {
   font-size: 18px;
@@ -1273,6 +1405,7 @@ small {
 .event {
   flex: 1;
 }
+
 .location-title {
   text-align: center;
 }
