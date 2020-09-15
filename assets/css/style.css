@@ -7,6 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth !important;
+  box-sizing: border-box;
 }
 
 body {
@@ -463,6 +464,8 @@ h4 {
   padding-left: 50px;
   padding-right: 40px;
   padding-bottom: 20px;
+  font-weight: bold;
+  font-family: "Alegreya Sans", sans-serif;
 }
 
 /* end of course page css */
@@ -1373,6 +1376,7 @@ small {
   display: flex;
   background-color: #333333;
   font-family: "Alegreya Sans", sans-serif;
+  height: auto;
 }
 
 .address {
@@ -1383,9 +1387,9 @@ small {
 }
 
 .event-container {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   display: flex;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .currentday {
@@ -1399,17 +1403,34 @@ small {
   font-size: 18px;
   padding: 10px 5px 10px 5px;
 }
-.map {
+.our-map {
   flex: 2;
+}
+#branches-container {
+  background-color: #333333;
+  color: #fff;
 }
 .event {
   flex: 1;
+  min-width: 250px;
+}
+.main-branch {
+  width: 99%;
+
+  height: 99%;
 }
 
 .location-title {
   text-align: center;
+  margin: 0;
+  padding: 20px;
+  font-family: "Alegreya Sans", sans-serif;
 }
-
+.our-other-branch {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
 .about-us-page {
   background-color: #092038;
   width: 100%;
@@ -1424,7 +1445,7 @@ small {
 .about-us-title .about-us-title-text {
   font-size: 40px;
   color: #ddbc65;
-  font-family: "Rubik", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: 700;
   text-decoration: none;
   display: inline-block;
@@ -1456,6 +1477,7 @@ small {
   width: 65%;
   height: 90%;
   right: 15%;
+  font-family: "Alegreya Sans", sans-serif;
 }
 .about-us-content {
   position: absolute;
@@ -1469,14 +1491,14 @@ small {
 .about-us-note {
   color: white;
   font-size: 19px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   padding: 10px 10px 0 10px;
 }
 .about-us-subheading {
   color: #ddbc65;
   /* color: #e3cf8a; */
   font-size: 22px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
   font-weight: 700;
 }
 .about-us-social {
@@ -1523,8 +1545,16 @@ small {
   color: #032d8a;
 }
 @media screen and (max-width: 796px) {
+  /* .our-other-branch {
+    width: 400px;
+    height: 300px;
+  } */
   .about-us-page {
     height: 60vh;
+  }
+  .main-branch {
+    height: 400px;
+    width: 100%;
   }
 
   .about-us-container {
