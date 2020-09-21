@@ -1,0 +1,35 @@
+/* slider custom css */
+
+.swiper-slide {
+    position: relative;
+}
+
+.slider-content {
+    position: absolute;
+}
+
+.slider-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/*curicilim ul style*/
+
+.circle-type {
+    list-style-type: disc !important;
+}
+
+.circle-type li {
+    padding-inline-start: 50px;
+}
+
+.circle-type-1 {
+    position: relative;
+    padding-left: 70px;
+}
+
+.circle-type-1 li {
+    list-style-type: disc !important;
+    color: black;
+}
