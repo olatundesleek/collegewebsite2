@@ -749,6 +749,14 @@ h4 {
   background-image: radial-gradient(circle, #083b6b, #092038);
   padding-top: 30px;
 }
+.error-container {
+  background-image: radial-gradient(circle, #083b6b, #092038);
+  padding-top: 30px;
+  text-align: center;
+  color: #fff;
+  font-family: "Alegreya Sans", sans-serif;
+  min-height: 400px;
+}
 
 .advantage-F-header {
   text-align: center;
